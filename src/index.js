@@ -3,7 +3,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import MyImage from './assets/images/background.jpg'
 import './index.css'
-import { Row, Col } from 'react-bootstrap'
 
 const App = () => {
   return (
