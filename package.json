@@ -1,6 +1,7 @@
 {
   "name": "ragoratelier",
   "version": "1.0.0",
+  "private": true,
   "description": "ragoratelier architect",
   "homepage": "https://phamrathang.github.io",
   "author": "Leoo <leo.quyennguyen@gmail.com> (https://quyennv.xyz)",

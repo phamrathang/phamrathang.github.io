@@ -11,11 +11,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   height: 100%;
   font-family: KozGoProL, sans-serif;
   overflow: hidden;
@@ -28,29 +23,119 @@ body {
   position: relative;
 }
 
-.content {
-  height: 100vh;
+.content img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.content img {
-  max-height: 70%;
-  max-width: 100%;
+.dickhead {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .dickhead h1 {
   font-family: KozGoProEL;
-  font-size: 147px;
+}
+.dickhead-contacts .contact a {
+  color: rgba(160, 100, 20, 1);
 }
 
+.infobox {
+  position: relative;
+}
 .infobox h2 {
   font-family: KozGoProEL;
-  font-size: 47px;
 }
 
-.dickhead-contacts {
-  margin-block-start: 0.67em;
-  margin-inline-end: 0.67em;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  .dickhead h1 {
+    font-size: 200px;
+    margin-left: -18px;
+    margin-top: -34px;
+  }
+
+  .dickhead-contacts h2 {
+    margin-bottom: 12px;
+  }
+  .dickhead-contacts .contact a {
+    font-size: 17px;
+  }
+
+  .infobox {
+    margin-top: 30px;
+  }
+  .infobox h2 {
+    font-size: 47px;
+  }
 }
-.dickhead-contacts .contact {
-  font-size: 17px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .content {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translateX(-32%) translateY(-50%);
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  .dickhead h1 {
+    font-size: 200px;
+    margin-left: -18px;
+    margin-top: -34px;
+  }
+
+  .dickhead-contacts h2 {
+    margin-bottom: 12px;
+  }
+  .dickhead-contacts .contact a {
+    font-size: 17px;
+  }
+
+  .infobox {
+    margin-top: 30px;
+  }
+  .infobox h2 {
+    font-size: 47px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .dickhead h1 {
+    font-size: 172px;
+    margin-left: -8px;
+    margin-top: -24px;
+  }
+
+  .dickhead-contacts {
+    margin-right: 8px;
+  }
+  .dickhead-contacts .contact a {
+    font-size: 13px;
+  }
+
+  .infobox {
+    margin-top: 15px;
+  }
+  .infobox h2 {
+    font-size: 38px;
+  }
 }
