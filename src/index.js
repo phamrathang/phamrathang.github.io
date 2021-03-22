@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyImage from './assets/images/background.jpg'
+import MyImage from '@/assets/images/background.jpg'
+import /* webpackPreload: true */ '@/assets/fonts/KozGoPro-Light.otf'
+import /* webpackPreload: true */ '@/assets/fonts/KozGoPro-ExtraLight.otf'
 import './index.css'
 
 const App = () => {
@@ -22,7 +24,9 @@ const App = () => {
               <a href="mailto:rigoratelier@gmail.com">rigoratelier@gmail.com</a>
             </div>
             <div className="contact">
-              <a href="facebook.com/rigoratelier">facebook.com/rigoratelier</a>
+              <a href="https://facebook.com/rigoratelier" target="_blank">
+                facebook.com/rigoratelier
+              </a>
             </div>
             <div className="contact">
               <a href="https://goo.gl/maps/wWdSX4vubEqTMMWm8" target="_blank">
