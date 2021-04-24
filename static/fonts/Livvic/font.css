@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Livvic100';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/static/fonts/Livvic/Livvic-100.eot'); /* IE9 */
+  src: url('/static/fonts/Livvic/Livvic-100.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/static/fonts/Livvic/Livvic-100.woff2') format('woff2'),
+    /* Modern Browsers */ url('/static/fonts/Livvic/Livvic-100.woff') format('woff'),
+    /* Modern Browsers */ url('/static/fonts/Livvic/Livvic-100.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('/static/fonts/Livvic/Livvic-100.svg#Livvic') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Livvic300';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/static/fonts/Livvic/Livvic-300.eot'); /* IE9 */
+  src: url('/static/fonts/Livvic/Livvic-300.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/static/fonts/Livvic/Livvic-300.woff2') format('woff2'),
+    /* Modern Browsers */ url('/static/fonts/Livvic/Livvic-300.woff') format('woff'),
+    /* Modern Browsers */ url('/static/fonts/Livvic/Livvic-300.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('/static/fonts/Livvic/Livvic-300.svg#Livvic') format('svg'); /* Legacy iOS */
+}
