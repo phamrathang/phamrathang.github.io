@@ -1,0 +1,161 @@
+// @font-face {
+//   font-family: 'KozGoProL';
+//   src: url('@/static/fonts/KozGoPro-Light.otf');
+// }
+// @font-face {
+//   font-family: 'KozGoProEL';
+//   src: url('@/static/fonts/KozGoPro-ExtraLight.otf');
+// }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: Livvic300, sans-serif;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.infobox {
+  position: relative;
+
+  h2 {
+    font-family: Livvic100;
+  }
+
+  .dickhead {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    h1 {
+      font-family: Livvic100;
+    }
+  }
+
+  .dickhead-contacts {
+    .contact {
+      a {
+        color: rgba(160, 100, 20, 1);
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .infobox {
+    margin-top: 15px;
+
+    h2 {
+      font-size: 38px;
+    }
+
+    .dickhead h1 {
+      font-size: 174px;
+      margin-left: -8px;
+      margin-top: -30px;
+    }
+
+    .dickhead-contacts {
+      margin-right: 8px;
+      .contact {
+        line-height: 17px;
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .content {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translateX(-32%) translateY(-50%);
+    max-width: 470px;
+    max-height: 470px;
+  }
+
+  .infobox {
+    margin-top: 20px;
+    h2 {
+      font-size: 47px;
+    }
+    .dickhead {
+      h1 {
+        font-size: 226px;
+        margin-left: -18px;
+        margin-top: -34px;
+      }
+    }
+
+    .dickhead-contacts {
+      h2 {
+        margin-bottom: 12px;
+      }
+      .contact {
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 470px;
+    max-height: 470px;
+  }
+
+  .infobox {
+    margin-top: 20px;
+    h2 {
+      font-size: 47px;
+    }
+    .dickhead {
+      h1 {
+        font-size: 230px;
+        margin-left: -18px;
+        margin-top: -39px;
+      }
+    }
+
+    .dickhead-contacts {
+      h2 {
+        margin-bottom: 10px;
+      }
+      .contact {
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

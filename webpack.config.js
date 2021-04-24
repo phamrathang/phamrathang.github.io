@@ -1,6 +1,7 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -24,18 +25,10 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              // modules: {
-              //   localIdentName: '[name]__[local]___[hash:base64:5]',
-              // },
-              sourceMap: true,
-            },
-          },
+          'style-loader',
+          'css-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -44,6 +37,7 @@ module.exports = {
               },
             },
           },
+          'sass-loader',
         ],
       },
       {
@@ -53,7 +47,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/images',
+              outputPath: 'static/images',
             },
           },
         ],
@@ -66,10 +60,18 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + '/src/index.html',
+      template: `${__dirname}/src/index.html`,
       filename: 'index.html',
       inject: 'body',
-      favicon: './src/assets/favicons/favicon.ico',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: `${__dirname}/src/static`, to: 'static' }],
     }),
   ],
+
+  devServer: {
+    contentBase: './dist',
+    port: 3000,
+    historyApiFallback: true,
+  },
 }

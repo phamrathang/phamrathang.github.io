@@ -1,10 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyImage from '@/assets/images/background.jpg'
-import /* webpackPreload: true */ '@/assets/fonts/KozGoPro-Light.otf'
-import /* webpackPreload: true */ '@/assets/fonts/KozGoPro-ExtraLight.otf'
-import './index.css'
+import MyImage from '@/static/images/background.jpg'
+import './index.scss'
 
 const App = () => {
   return (
@@ -22,6 +20,9 @@ const App = () => {
             </div>
             <div className="contact">
               <a href="mailto:rigoratelier@gmail.com">rigoratelier@gmail.com</a>
+            </div>
+            <div className="contact">
+              <a href="https://www.instagram.com/rigoratelier">instagram/rigoratelier</a>
             </div>
             <div className="contact">
               <a href="https://facebook.com/rigoratelier" target="_blank">
