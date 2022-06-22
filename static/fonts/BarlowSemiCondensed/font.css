@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'BarlowSemiCondensed-Light';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/static/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Light.ttf')
+    format('truetype');
+}
