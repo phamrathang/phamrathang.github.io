@@ -11,22 +11,25 @@ const App = () => {
         <img src={MyImage} />
         <div className="infobox">
           <div className="dickhead">
-            <h1>RA</h1>
+            <h1>r a</h1>
           </div>
           <div className="dickhead-contacts text-right">
-            <h2>rigor atelier</h2>
             <div className="contact">
               <a href="tel:+84395799544">+84.39 5799 544</a>
             </div>
             <div className="contact">
-              <a href="mailto:rigoratelier@gmail.com">rigoratelier@gmail.com</a>
+              <a href="mailto:rarara.atelier@gmail.com">
+                rarara.atelier@gmail.com
+              </a>
             </div>
             <div className="contact">
-              <a href="https://www.instagram.com/rigoratelier">instagram/rigoratelier</a>
+              <a href="http://facebook.com/rarara.atelier" target="_blank">
+                facebook.com/rarara.atelier
+              </a>
             </div>
             <div className="contact">
-              <a href="https://facebook.com/rigoratelier" target="_blank">
-                facebook.com/rigoratelier
+              <a href="https://www.instagram.com/rarara.atelier">
+                instagram.com/rarara.atelier
               </a>
             </div>
             <div className="contact">

@@ -41,7 +41,7 @@ body {
     left: 0;
 
     h1 {
-      font-family: Livvic100;
+      font-family: BarlowSemiCondensed-Light;
     }
   }
 
@@ -69,17 +69,18 @@ body {
     }
 
     .dickhead h1 {
-      font-size: 174px;
-      margin-left: -8px;
-      margin-top: -30px;
+      font-size: 190px;
+      margin-left: 8px;
+      margin-top: -85px;
     }
 
     .dickhead-contacts {
-      margin-right: 8px;
+      padding-top: 6px;
+      margin-right: 20px;
       .contact {
-        line-height: 17px;
+        line-height: 20px;
         a {
-          font-size: 13px;
+          font-size: 15px;
         }
       }
     }
@@ -104,9 +105,9 @@ body {
     }
     .dickhead {
       h1 {
-        font-size: 226px;
+        font-size: 245px;
         margin-left: -18px;
-        margin-top: -34px;
+        margin-top: -115px;
       }
     }
 
@@ -116,7 +117,7 @@ body {
       }
       .contact {
         a {
-          font-size: 17px;
+          font-size: 18px;
         }
       }
     }
@@ -141,13 +142,14 @@ body {
     }
     .dickhead {
       h1 {
-        font-size: 230px;
+        font-size: 250px;
         margin-left: -18px;
-        margin-top: -39px;
+        margin-top: -115px;
       }
     }
 
     .dickhead-contacts {
+      padding-top: 15px;
       h2 {
         margin-bottom: 10px;
       }
