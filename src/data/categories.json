@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "architecture",
+    "name": "Architecture"
+  },
+  {
+    "slug": "design",
+    "name": "Design"
+  },
+  {
+    "slug": "journal",
+    "name": "Journal"
+  },
+  {
+    "slug": "atelier",
+    "name": "Atelier"
+  }
+]

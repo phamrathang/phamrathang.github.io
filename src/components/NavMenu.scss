@@ -1,0 +1,93 @@
+/* ── Logo ── */
+.nav-logo {
+  position: fixed;
+  top: 28px;
+  left: 40px;
+  z-index: 1000;
+  font-family: BarlowSemiCondensed-Light, sans-serif;
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+/* ── Overlay ── */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+  background: rgba(8, 8, 8, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ── Menu list ── */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-menu-item {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: Livvic300, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #666;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+
+  &:hover,
+  &--active {
+    color: #fff;
+    letter-spacing: 8px;
+  }
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 600px) {
+  .nav-logo {
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+  }
+
+  .nav-menu-item {
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding: 10px 16px;
+
+    &:hover,
+    &--active {
+      letter-spacing: 6px;
+    }
+  }
+}

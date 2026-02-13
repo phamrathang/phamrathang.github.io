@@ -1,0 +1,136 @@
+.article-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0a;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.article-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 18px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Header (Top) ── */
+.article-header {
+  display: flex;
+  align-items: baseline;
+  padding: 28px 40px 0;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.article-header-spacer {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.article-title {
+  font-family: Livvic300, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  flex: 1;
+}
+
+/* ── Content (Middle) ── */
+.article-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  overflow: hidden;
+
+  p {
+    font-family: Livvic300, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bbb;
+    max-width: 650px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* ── Images (Bottom — horizontal scroll) ── */
+.article-images {
+  height: 60vh;
+  overflow: hidden;
+  padding: 0 40px 20px;
+}
+
+.article-images-track {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  align-items: stretch;
+  justify-content: center;
+
+  /* Thin styled scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 2px;
+  }
+}
+
+.article-image-item {
+  height: 100%;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 600px) {
+  .article-header {
+    padding: 20px 20px 0;
+    gap: 14px;
+  }
+
+  .article-header-spacer {
+    width: 60px;
+  }
+
+  .article-content {
+    padding: 16px 20px;
+
+    p {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  }
+
+  .article-images {
+    height: 40vh;
+    padding: 0 20px 16px;
+  }
+}

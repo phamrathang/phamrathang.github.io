@@ -1,0 +1,141 @@
+.category-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 18px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Header ── */
+.category-header {
+  display: flex;
+  align-items: baseline;
+  padding: 28px 40px 20px;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.category-header-spacer {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.category-title {
+  font-family: Livvic300, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* ── Scroll area (vertical list) ── */
+.category-scroll-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ── Card (table row: image | caption) ── */
+.category-card {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.category-card-image-wrap {
+  width: 320px;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.category-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+
+  .category-card:hover & {
+    transform: scale(1.04);
+  }
+}
+
+.category-card-caption {
+  font-family: Livvic300, sans-serif;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+
+  .category-card:hover & {
+    color: #fff;
+  }
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 600px) {
+  .category-header {
+    padding: 20px 20px 16px;
+    gap: 14px;
+  }
+
+  .category-header-spacer {
+    width: 60px;
+  }
+
+  .category-scroll-container {
+    padding: 0 20px;
+  }
+
+  .category-card {
+    gap: 20px;
+    padding: 16px 0;
+  }
+
+  .category-card-image-wrap {
+    width: 180px;
+    height: 130px;
+  }
+
+  .category-card-caption {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
