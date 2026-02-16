@@ -4,7 +4,7 @@
   "private": true,
   "description": "ragoratelier architect",
   "homepage": "https://phamrathang.github.io",
-  "author": "Leoo <leo.quyennguyen@gmail.com> (https://quyennv.xyz)",
+  "author": "Leoo <leo.quyennguyen@gmail.com>",
   "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.13.10",
