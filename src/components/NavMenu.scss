@@ -35,7 +35,9 @@
 
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.45s ease, visibility 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
 
   &--open {
     opacity: 1;
@@ -63,7 +65,9 @@
   letter-spacing: 6px;
   text-transform: uppercase;
   padding: 12px 24px;
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
 
   &:hover,
   &--active {

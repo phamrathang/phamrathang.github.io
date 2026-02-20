@@ -4,14 +4,24 @@
     "category": "architecture",
     "caption": "Nhà phố hiện đại Tân Bình",
     "title": "Nhà phố hiện đại Tân Bình",
+    "location": "Tân Bình, Ho Chi Minh City",
+    "completedAt": "2024",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "thumbnail": "/static/images/tinified/8Z8A4219.jpg",
-    "images": [
-      "/static/images/tinified/8Z8A4219.jpg",
-      "/static/images/tinified/8Z8A4229.jpg",
-      "/static/images/tinified/8Z8A4239.jpg",
-      "/static/images/tinified/8Z8A4248.jpg"
-    ]
+    "images": {
+      "topLeft": [
+        "/static/images/tinified/8Z8A4219.jpg",
+        "/static/images/tinified/8Z8A4229.jpg",
+        "/static/images/tinified/8Z8A4239.jpg",
+        "/static/images/tinified/8Z8A4248.jpg"
+      ],
+      "bottomRight": [
+        "/static/images/tinified/8Z8A4288.jpg",
+        "/static/images/tinified/8Z8A4292.jpg",
+        "/static/images/tinified/8Z8A4298.jpg",
+        "/static/images/tinified/8Z8A4303.jpg"
+      ]
+    }
   },
   {
     "slug": "nha-pho-hien-dai-tan-phu",
@@ -20,12 +30,16 @@
     "title": "Nhà phố hiện đại Tân Phú",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "thumbnail": "/static/images/tinified/8Z8A4239.jpg",
-    "images": [
-      "/static/images/tinified/8Z8A4239.jpg",
-      "/static/images/tinified/8Z8A4248.jpg",
-      "/static/images/tinified/8Z8A4288.jpg",
-      "/static/images/tinified/8Z8A4292.jpg"
-    ]
+    "images": {
+      "topLeft": [
+        "/static/images/tinified/8Z8A4239.jpg",
+        "/static/images/tinified/8Z8A4248.jpg"
+      ],
+      "bottomRight": [
+        "/static/images/tinified/8Z8A4288.jpg",
+        "/static/images/tinified/8Z8A4292.jpg"
+      ]
+    }
   },
   {
     "slug": "khong-gian-noi-that-binh-thanh",
@@ -34,12 +48,16 @@
     "title": "Không gian nội thất Bình Thạnh",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "thumbnail": "/static/images/tinified/8Z8A4298.jpg",
-    "images": [
-      "/static/images/tinified/8Z8A4298.jpg",
-      "/static/images/tinified/8Z8A4303.jpg",
-      "/static/images/tinified/8Z8A4317.jpg",
-      "/static/images/tinified/8Z8A4332.jpg"
-    ]
+    "images": {
+      "topLeft": [
+        "/static/images/tinified/8Z8A4298.jpg",
+        "/static/images/tinified/8Z8A4303.jpg"
+      ],
+      "bottomRight": [
+        "/static/images/tinified/8Z8A4317.jpg",
+        "/static/images/tinified/8Z8A4332.jpg"
+      ]
+    }
   },
   {
     "slug": "thiet-ke-van-phong-quan-1",
@@ -48,12 +66,16 @@
     "title": "Thiết kế văn phòng Quận 1",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "thumbnail": "/static/images/tinified/8Z8A4335.jpg",
-    "images": [
-      "/static/images/tinified/8Z8A4335.jpg",
-      "/static/images/tinified/8Z8A4338.jpg",
-      "/static/images/tinified/8Z8A4357.jpg",
-      "/static/images/tinified/8Z8A4370.jpg"
-    ]
+    "images": {
+      "topLeft": [
+        "/static/images/tinified/8Z8A4335.jpg",
+        "/static/images/tinified/8Z8A4338.jpg"
+      ],
+      "bottomRight": [
+        "/static/images/tinified/8Z8A4357.jpg",
+        "/static/images/tinified/8Z8A4370.jpg"
+      ]
+    }
   },
   {
     "slug": "nhat-ky-cong-trinh-go-vap",
@@ -62,12 +84,16 @@
     "title": "Nhật ký công trình Gò Vấp",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "thumbnail": "/static/images/tinified/8Z8A4378.jpg",
-    "images": [
-      "/static/images/tinified/8Z8A4378.jpg",
-      "/static/images/tinified/8Z8A4383.jpg",
-      "/static/images/tinified/8Z8A4398.jpg",
-      "/static/images/tinified/8Z8A4407.jpg"
-    ]
+    "images": {
+      "topLeft": [
+        "/static/images/tinified/8Z8A4378.jpg",
+        "/static/images/tinified/8Z8A4383.jpg"
+      ],
+      "bottomRight": [
+        "/static/images/tinified/8Z8A4398.jpg",
+        "/static/images/tinified/8Z8A4407.jpg"
+      ]
+    }
   },
   {
     "slug": "xuong-sang-tao-atelier",
@@ -76,11 +102,15 @@
     "title": "Xưởng sáng tạo Atelier",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "thumbnail": "/static/images/tinified/8Z8A4409.jpg",
-    "images": [
-      "/static/images/tinified/8Z8A4409.jpg",
-      "/static/images/tinified/8Z8A4417.jpg",
-      "/static/images/tinified/8Z8A4219.jpg",
-      "/static/images/tinified/8Z8A4229.jpg"
-    ]
+    "images": {
+      "topLeft": [
+        "/static/images/tinified/8Z8A4409.jpg",
+        "/static/images/tinified/8Z8A4417.jpg"
+      ],
+      "bottomRight": [
+        "/static/images/tinified/8Z8A4219.jpg",
+        "/static/images/tinified/8Z8A4229.jpg"
+      ]
+    }
   }
 ]
