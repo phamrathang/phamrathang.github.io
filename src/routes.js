@@ -1,20 +1,48 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React from "react"
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom"
 
-import NavMenu from '@/components/NavMenu'
-import HomePage from '@/pages/home/HomePage'
-import CategoryPage from '@/pages/category/CategoryPage'
-import ArticlePage from '@/pages/article/ArticlePage'
+import NavMenu from "@dick/components/NavMenu"
+import HomePage from "@dick/pages/home/HomePage"
+import CategoryPage from "@dick/pages/category/CategoryPage"
+import ArticlePage from "@dick/pages/article/ArticlePage"
 
-const Routes = () => (
-  <Router>
+const Router = () => (
+  <HashRouter>
     <NavMenu />
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/:categorySlug" component={CategoryPage} />
-      <Route exact path="/:categorySlug/:articleSlug" component={ArticlePage} />
-    </Switch>
-  </Router>
+    <Routes>
+      <Route exact path="/" element={<HomePage />} />
+      <Route exact path="/:categorySlug" element={<CategoryPage />} />
+      <Route
+        exact
+        path="/:categorySlug/:articleSlug"
+        element={<ArticlePage />}
+      />
+      {/* Not Found */}
+      <Route element={() => <Navigate to="/" />} />
+    </Routes>
+  </HashRouter>
 )
 
-export default Routes
+export default Router
+
+// import React from 'react'
+
+// import { HashRouter, Route, Routes, Navigate } from 'react-router-dom'
+
+// import Home from './pages/home'
+// import Resume from './pages/resume'
+
+// function Router() {
+//   return (
+//     <HashRouter>
+//       <Routes>
+//         <Route exact path="/" element={<Home />} />
+//         <Route exact path="/resume" element={<Resume />} />
+//         {/* Not Found */}
+//         <Route element={() => <Navigate to="/" />} />
+//       </Routes>
+//     </HashRouter>
+//   )
+// }
+
+// export default Router

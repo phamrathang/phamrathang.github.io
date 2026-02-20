@@ -1,6 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Routes from '@/routes'
-import './index.scss'
+import React from "react"
+import ReactDOM from "react-dom/client"
+import Router from "@dick/routes"
+import "./index.scss"
 
-ReactDOM.render(<Routes />, document.querySelector('#root'))
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Router />
+  </React.StrictMode>
+)

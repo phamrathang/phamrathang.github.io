@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useParams } from "react-router-dom"
-import articles from "@/data/articles.json"
-import Lightbox from "@/components/Lightbox"
+import articles from "@dick/data/articles.json"
+import Lightbox from "@dick/components/Lightbox"
 import "./ArticlePage.scss"
 
 const ArticlePage = () => {

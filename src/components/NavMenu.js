@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { Link, useHistory, useLocation } from 'react-router-dom'
-import categories from '@/data/categories.json'
-import './NavMenu.scss'
+import React, { useState } from "react"
+import { useNavigate, useLocation } from "react-router-dom"
+import categories from "@dick/data/categories.json"
+import "./NavMenu.scss"
 
 const NavMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false)
-  const history = useHistory()
+  const navigate = useNavigate()
   const location = useLocation()
 
   const handleLogoClick = (e) => {
@@ -13,7 +13,7 @@ const NavMenu = () => {
     if (menuOpen) {
       // Second click → go home & close menu
       setMenuOpen(false)
-      history.push('/')
+      navigate("/")
     } else {
       // First click → open menu
       setMenuOpen(true)
@@ -22,7 +22,7 @@ const NavMenu = () => {
 
   const handleCategoryClick = (slug) => {
     setMenuOpen(false)
-    history.push(`/${slug}`)
+    navigate(`/${slug}`)
   }
 
   const handleOverlayClick = () => {
@@ -36,7 +36,7 @@ const NavMenu = () => {
       </div>
 
       <div
-        className={`nav-overlay ${menuOpen ? 'nav-overlay--open' : ''}`}
+        className={`nav-overlay ${menuOpen ? "nav-overlay--open" : ""}`}
         onClick={handleOverlayClick}
       >
         <nav className="nav-menu" onClick={(e) => e.stopPropagation()}>
@@ -45,8 +45,8 @@ const NavMenu = () => {
               key={cat.slug}
               className={`nav-menu-item ${
                 location.pathname.startsWith(`/${cat.slug}`)
-                  ? 'nav-menu-item--active'
-                  : ''
+                  ? "nav-menu-item--active"
+                  : ""
               }`}
               onClick={() => handleCategoryClick(cat.slug)}
             >

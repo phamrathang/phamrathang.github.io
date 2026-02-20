@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link, useParams } from 'react-router-dom'
-import articles from '@/data/articles.json'
-import categories from '@/data/categories.json'
-import './CategoryPage.scss'
+import React from "react"
+import { Link, useParams } from "react-router-dom"
+import articles from "@dick/data/articles.json"
+import categories from "@dick/data/categories.json"
+import "./CategoryPage.scss"
 
 const CategoryPage = () => {
   const { categorySlug } = useParams()

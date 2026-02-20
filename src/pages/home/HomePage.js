@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react"
 import { Link } from "react-router-dom"
-import articles from "@/data/articles.json"
+import articles from "@dick/data/articles.json"
 import "./HomePage.scss"
 
 const ITEMS_PER_LOAD = 10
